@@ -2,7 +2,7 @@
 	"project": {
 		"name" : "libzip",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "LicenseRef-",
+		"SPDX-License-Identifier": "BSD-3-Clause",
 		"sourceLink" : "https://github.com/nih-at/libzip",
 		"version" : "1.8.0"
 	}
