@@ -4,6 +4,9 @@
 		"type" : "xyo-cpp",
 		"SPDX-License-Identifier": "BSD-3-Clause",
 		"sourceLink" : "https://github.com/nih-at/libzip",
-		"version" : "1.8.0"
+		"version" : "1.9.2",
+		"hasRelease" : true,
+		"noVersion" : true,
+		"githubRelease" : true
 	}
 }

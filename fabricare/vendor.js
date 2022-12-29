@@ -26,7 +26,7 @@ Shell.removeFile("archive/" + Project.vendor + ".7z");
 
 // Source
 runInPath("archive", function() {
-	webLink = "https://github.com/nih-at/libzip/releases/download/v1.8.0/libzip-1.8.0.tar.gz";
+	webLink = "https://github.com/nih-at/libzip/releases/download/v1.9.2/libzip-1.9.2.tar.gz";
 	if (!Shell.fileExists(Project.vendor + ".tar.gz")) {
 		exitIf(Shell.system("curl --insecure --location " + webLink + " --output " + Project.vendor + ".tar.gz"));
 	};
