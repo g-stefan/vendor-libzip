@@ -1,13 +1,18 @@
 {
-	"project": {
-		"name" : "libzip",
+	"solution": {
+		"name" : "vendor-libzip",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "BSD-3-Clause",
-		"sourceLink" : "https://github.com/nih-at/libzip",
-		"version" : "1.9.2",
-		"hasRelease" : true,
-		"noVersion" : true,
-		"githubRelease" : true,
-		"githubRepository" : "vendor-libzip"
+		"projects": [
+			{
+				"name" : "libzip",
+				"SPDX-License-Identifier": "BSD-3-Clause",
+				"sourceLink" : "https://github.com/nih-at/libzip",
+				"version" : "1.9.2",
+				"noVersion" : true
+			}
+		],
+		"releaseName" : "libzip",
+		"hasGithub" : true
 	}
 }
+
