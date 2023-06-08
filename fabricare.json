@@ -11,8 +11,7 @@
 				"noVersion" : true
 			}
 		],
-		"releaseName" : "libzip",
-		"hasGithub" : true
+		"releaseName" : "libzip"
 	}
 }
 
