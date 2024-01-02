@@ -7,7 +7,7 @@
 				"name" : "libzip",
 				"SPDX-License-Identifier": "BSD-3-Clause",
 				"sourceLink" : "https://github.com/nih-at/libzip",
-				"version" : "1.9.2",
+				"version" : "1.10.1",
 				"noVersion" : true
 			}
 		],
