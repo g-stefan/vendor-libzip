@@ -34,6 +34,17 @@ if (!Shell.fileExists("temp/build.config.flag")) {
 	cmdConfig += " -DCMAKE_BUILD_TYPE=Release";
 	cmdConfig += " -DCMAKE_INSTALL_PREFIX=" + Shell.realPath(Shell.getcwd()) + "\\output";
 
+	if (Fabricare.isDynamic()) {
+		cmdConfig += " -DBUILD_SHARED_LIBS=ON";
+		cmdConfig += " -DWIN32_MT_BUILD=OFF";
+	};
+
+	if (Fabricare.isStatic()) {
+		cmdConfig += " -DBUILD_SHARED_LIBS=OFF";
+		cmdConfig += " -DWIN32_MT_BUILD=ON";
+		cmdConfig += " -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded";
+	};
+
 	runInPath("temp/cmake", function() {
 		exitIf(Shell.system(cmdConfig));
 	});
