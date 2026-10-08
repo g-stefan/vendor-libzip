@@ -43,6 +43,10 @@ if (!Shell.fileExists("temp/build.config.flag")) {
 		cmdConfig += " -DBUILD_SHARED_LIBS=OFF";
 		cmdConfig += " -DWIN32_MT_BUILD=ON";
 		cmdConfig += " -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded";
+		cmdConfig += " \"-DCMAKE_CXX_FLAGS=/MT /DWIN32 /D_WINDOWS /W3 /GR /EHsc\"";
+		cmdConfig += " \"-DCMAKE_C_FLAGS=/MT /DWIN32 /D_WINDOWS /W3\"";
+		cmdConfig += " \"-DCMAKE_CXX_FLAGS_RELEASE=/MT /O2 /Ob2 /DNDEBUG\"";
+		cmdConfig += " \"-DCMAKE_C_FLAGS_RELEASE=/MT /O2 /Ob2 /DNDEBUG\"";
 	};
 
 	runInPath("temp/cmake", function() {

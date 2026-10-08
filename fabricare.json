@@ -1,5 +1,6 @@
 {
 	"solution": {
+		"namespace" : "xyo",
 		"name" : "vendor-libzip",
 		"type" : "xyo-cpp",
 		"projects": [
